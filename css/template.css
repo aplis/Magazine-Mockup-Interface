@@ -1,0 +1,385 @@
+/* defining the downloaded web fonts */
+@font-face {
+    font-family: specialelite;
+    src: url(../fonts/Special_Elite/SpecialElite.ttf);
+}
+
+/* defining the downloaded web fonts */
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* defining the downloaded web fonts */
+@font-face {
+    font-family: poiretone;
+    src: url(../fonts/Poiret_One/PoiretOne-Regular.ttf);
+}
+
+/*setting default font size to 10px,so that the rest of the measurements can be stated in em. */
+/* In this case, 1em=10px; */
+html {
+    font-size: 10px;
+    background-image: url(../images/background.jpg);
+    /*scaling the background image throughout the length of the page without repeat */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*formatting the title name in the masthead */
+#Title{
+    font-family: specialelite;
+    font-size: 2.5em;
+    letter-spacing: 0.1em;
+}
+
+/* setting the text to justify format so that the look would be more news-like */
+body {
+    text-align: justify;
+}
+
+/*setting the width and margin of page-wrapper */
+.page-wrapper {
+    width: 102.4em;
+    margin: 0 auto;
+    margin-top: 0.8em; 
+}
+
+/* setting the properties of masthead - including the title, motto date and logo */
+#masthead {
+    text-align: center;
+    font-family: specialelite;
+    font-size: 1.8em;
+    background-color: rgba(79, 44, 0, 0.5);
+    padding-top: 0.2em;
+    box-shadow: 10px 10px 4px #4f2000;
+    border-radius: 0.5em;
+}
+
+/* to make the hyperlink text look different than default */
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    display: inline-block;
+    font-family: poiretone;
+}
+
+nav > a {
+    border: outset 0.2em;
+}
+
+header > img {
+    padding-left: 1em;
+}
+/*make the logo to appear in the left side of masthead */
+#logo {
+    float: left;
+}
+/*main tag which contains the whole content of the magazine */
+main {
+    background-color: rgba(40, 17, 1, 0.7);
+    border-width: 0.1em;
+    border-style: solid;
+    border-color: #894606;
+    border-radius: 0.4em;
+}
+
+#Subheading {
+    font-size: 2.3em;
+    margin-left: 12em;
+    text-align: center;
+    color: antiquewhite;
+    letter-spacing: 0.5em;
+    text-decoration: underline;
+}
+
+#context {
+    font-size: 1.8em;
+    text-align: center;
+    color: navajowhite;
+    letter-spacing: 0.5em;
+}
+
+/* content present in the main section of the magazine page */
+#mainContent {
+    float: right;
+    margin-right: 0.3em;
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border-width: 0.1em;
+}
+/* for the content present in the main section of the magazine page */
+aside {
+    float: left;
+    background-color: rgba(40, 17, 1, 0.3);
+    width: 27.13em;
+    border-style: solid;
+    border-width: 0.1em;
+    margin-left: 0.4em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    border-radius: 1em;
+}
+
+#notify {
+    font-size: 2.4em;
+    color: antiquewhite;
+    font-family: roboto;
+    text-align: center;
+}
+
+#pagemenu {
+    overflow: hidden;
+    width: 27em;
+    list-style-type: none;
+}
+
+ul#pagemenu li {
+    display: inline-block;
+}
+
+/* for the links to redirect between pages */
+ul#pagemenu li a {
+    height: auto;
+    float: left;
+    font-size: 3em;
+    border-style: double;
+    text-align: center;
+    background-image: url(../images/button.png);
+    /*setting background image to buttons */
+    font-weight: 800;
+    margin-left: 1em;
+    width: auto;
+}
+
+/*to create a hover effect for the menu options */
+ul#pagemenu li a:hover {
+    border-style: solid;
+    color: goldenrod;
+}
+
+ul#pagemenu li a:active {
+    color: gold;
+}
+
+.currentLink {
+    border-width: 0.3em;
+    color: darkgoldenrod;
+}
+
+/*to show a clear change so that the user can identify what is the active link */
+
+/*formatting the text content inside the articles */
+#mainContent > article > p {
+    -webkit-column-count: 3; 
+    -moz-column-count: 3; /*declaring the articles present content in three columns */
+    column-count: 3;
+    -moz-column-fill: auto;
+    -webkit-column-fill: auto; /* Chrome, Safari, Opera */
+    column-fill: auto;
+    background-color: rgba(40, 23, 2, 0.5);
+    -webkit-column-rule: 0.2em outset #a35900; 
+    -moz-column-rule: 0.2em outset #a35900;  /*drawing a vertical line to clearly demarcate each column */
+    column-rule: 0.2em outset #a35900;
+    /* height: 26em;  setting the height of each column */
+    font-size: 1.4em;
+}
+
+#mainContent > article > ul {
+    -webkit-column-count: 3; 
+    -moz-column-count: 3; /*declaring the articles present content in three columns */
+    column-count: 3;
+    -moz-column-fill: auto;
+    -webkit-column-fill: auto; /* Chrome, Safari, Opera */
+    column-fill: auto;
+    background-color: rgba(40, 23, 2, 0.5);
+    -webkit-column-rule: 0.2em outset #a35900; 
+    -moz-column-rule: 0.2em outset #a35900;  /*drawing a vertical line to clearly demarcate each column */
+    column-rule: 0.2em outset #a35900;
+    /* height: 26em;  setting the height of each column */
+    font-size: 1.4em;
+    color: antiquewhite;
+    list-style-type: none;
+    column-span: none;
+}
+
+article > p {
+    background-color: rgba(40, 23, 2, 0.5);
+    color: #f7e4cd;
+}
+/*formatting every article in the main section */
+#mainContent > article {
+    margin-left: 0.4em;
+    width: 72.26em;
+    border-style: solid;
+    border-width: 0.1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgba(1, 21, 53, 0.5);
+}
+/*formatting the title of the article */
+#mainContent > article > h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #e8c6f4;
+    letter-spacing: 0.1em;
+}
+/*formatting the author tag of the article */
+#mainContent > article > h3 {
+    font-size: 1.8em;
+    font-family: poiretone;
+    text-align: right;
+    background-color: rgba(40, 23, 2, 0.5);
+    color: antiquewhite;
+}
+/*formatting the image related to the article */
+#mainContent > article > img {
+    margin-left: 15em;
+    width: 40em;
+    height: 30em;
+    border-style: ridge;
+    border-color: #5b3403;
+}
+
+/*formatting the aside bar */
+#otherContent > nav {
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+    border-bottom-color: #8e5107;
+}
+
+aside > article > h2 {
+    font-size: 1.6em;
+}
+
+aside > article > h3 {
+    font-size: 1.4em;
+    font-family: poiretone;
+    text-align: right;
+    color: antiquewhite;
+}
+
+aside > article > p {
+    font-size: 1.3em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1em;
+}
+
+aside > article > img {
+    width: 20em;
+    height: 15em;
+    margin-left: 3em;
+    border-style: solid;
+    border-color: #5b3403;
+}
+
+#subarticlefive > img {
+    width: 22em;
+    height: 18em;
+    margin-left: 1.9em;
+    margin-bottom: 0.1em;
+    border-style: solid;
+    border-color: #5b3403;
+    border-radius: 1em;
+}
+
+#mainContent > article > footer {
+    background-color: rgba(40, 23, 2, 0.5);
+    font-size: 1.4em;
+    color: #f7e4cd;
+    font-style: italic;
+    font-family: poiretone;
+    text-align: right;
+}
+/* CSS for footer*/
+/*for the sitemap section */
+#sitemap {
+    width: 100.9em;
+    clear: left;
+    border-style: solid;
+    border-width: 0.1em;
+    border-radius: 0.5em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    background-color: rgba(137, 37, 22,0.2);
+}
+
+#sitemap > nav {
+    margin-bottom: 1em;
+    border-bottom-style: dotted;
+    border-bottom-width: 0.1em;
+}
+/*for the contact information section */
+#contactInfo {
+    text-align: center;
+    font-size: 1.4em;
+    border-bottom-style: dotted;
+    border-bottom-width: 0.1em;
+    margin-bottom: 1em;
+    color: #f7e4cd;
+}
+
+#contactInfo > h3 {
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+}
+
+/*formatting the email in the contact information section */
+#email {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #f7e4cd;
+}
+
+/*for the copyright section */
+#copyright {
+    font-size: 1.2em;
+    color: antiquewhite;
+    text-align: center;
+}
+
+#sitemap > h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #f7e4cd;
+    text-decoration: underline;
+    letter-spacing: 0.1em;
+}
+
+#sitemaplinks {
+    background-color: rgba(1, 21, 53, 0.5);
+    font-weight: 800;
+}
+
+#list > li > a {
+    color: #f7e4cd;
+}
+
+#list > li > a:hover {
+    color: #87590a;
+}
+
+/*to represent the links in the sitemap in two columns */
+#list {
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; /*declaring the articles present content in three columns */
+    column-count: 2;
+    -moz-column-fill: auto;
+    -webkit-column-fill: auto; /* Chrome, Safari, Opera */
+    column-fill: auto;
+    -webkit-column-width: 33em; /* Chrome, Safari, Opera */
+    -moz-column-width: 33em; /* Firefox */
+    column-width: 33em;
+    -webkit-column-rule: 0.2em outset #a35900; 
+    -moz-column-rule: 0.2em outset #a35900;  /*drawing a vertical line to clearly demarcate each column */
+    column-rule: 0.2em outset #a35900;
+    list-style: none;
+}
